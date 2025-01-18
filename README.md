@@ -18,7 +18,7 @@
 確保您在專案目錄下，執行以下指令以建置映像：
 
 ``` bash
-docker build -t facebook-auto-poke .
+docker build -t facebook-auto-poke
 ```
 
 2. 設定環境變數
@@ -27,7 +27,7 @@ docker build -t facebook-auto-poke .
 ```
 docker run -e EMAIL="your-email@example.com" \
            -e PASSWORD="your-facebook-password" \
-           -e MY_LIST="user1@example.com,user2@example.com" \
+           -e MY_LIST="url1,url2" \
            facebook-auto-poke
 ```
 
